@@ -1,0 +1,19 @@
+{
+  "name": "exotrainer",
+  "version": "1.0.0",
+  "description": "a web app to better connect trainers with their clients",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NG-Rich/EXOTRAINER.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NG-Rich/EXOTRAINER/issues"
+  },
+  "homepage": "https://github.com/NG-Rich/EXOTRAINER#readme"
+}
