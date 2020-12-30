@@ -2,15 +2,30 @@
   "name": "exotrainer",
   "version": "1.0.0",
   "description": "a web app to better connect trainers with their clients",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "export NODE_ENV=test&& jasmine",
+    "start": "nodemon --exec babel-node src/server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "axios": "^0.21.1",
+    "jasmine": "^3.6.3"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NG-Rich/EXOTRAINER.git"
   },
-  "author": "",
+  "author": "Richard Chan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NG-Rich/EXOTRAINER/issues"
