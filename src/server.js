@@ -4,9 +4,9 @@
  * Module dependencies.
  */
 
-import app from './app';
-const debug = require('debug')('exotrainer:server');
-import { createServer } from 'http';
+const app = require('./app');
+const debug = require('debug')('test:server');
+const http = require('http');
 
 /**
  * Get port from environment and store in Express.
@@ -19,7 +19,7 @@ app.set('port', port);
  * Create HTTP server.
  */
 
-const server = createServer(app);
+const server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
