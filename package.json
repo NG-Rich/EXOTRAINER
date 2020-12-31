@@ -6,9 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "export NODE_ENV=test&& jasmine",
-    "build": "babel src -d dist",
-    "start": "npm run build && nodemon --exec babel-node dist/server.js",
-    "serve": "node dist/server.js"
+    "start": "nodemon src/server.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -18,10 +16,6 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/node": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
     "axios": "^0.21.1",
     "jasmine": "^3.6.3"
   },
