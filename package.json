@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "a web app to better connect trainers with their clients",
   "main": "src/server.js",
+  "type": "module",
   "scripts": {
     "test": "export NODE_ENV=test&& jasmine",
-    "start": "nodemon --exec babel-node src/server.js"
+    "build": "babel src -d dist",
+    "start": "npm run build && nodemon --exec babel-node dist/server.js",
+    "serve": "node dist/server.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
